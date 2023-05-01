@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="./style.js"></script>
+    <link rel="stylesheet" href="./main.css">
+    <title>Máy ATM</title>
+</head>
+<body>
+    <div class="display-mission">
+        <div class="the-mission" id="1">
+            <i class='bx bx-x close' data-method="#1"></i>
+            <h2>Thông tin nhiệm vụ</h2>
+            <div class="content-the-mission">
+                <p>
+                    <span>Mã nhiệm vụ: </span>
+                    1234
+                </p>
+                <p>
+                    <span>Tên nhiệm vụ: </span>
+                    Like
+                </p>
+                <p>
+                    <span>Thời gian hoàn thành: </span>
+                    14-7-2005
+                </p>
+                <p>
+                    <span>Trạng thái: </span>
+                    Hoàn thành
+                </p>
+                <p>
+                    <span>Số tiền nhận được: </span>
+                    500000
+                </p>
+            </div>
+            <button data-method="#1">đồng ý</button>
+        </div>
+        <div class="the-mission" id="2">
+            <i class='bx bx-x close' data-method="#2"></i>
+            <h2>Thông tin nhiệm vụ</h2>
+            <div class="content-the-mission">
+                <p>
+                    <span>Mã nhiệm vụ: </span>
+                    4635
+                </p>
+                <p>
+                    <span>Tên nhiệm vụ: </span>
+                    ticker
+                </p>
+                <p>
+                    <span>Thời gian hoàn thành: </span>
+                    26-7-2000
+                </p>
+                <p>
+                    <span>Trạng thái: </span>
+                    Hoàn thành
+                </p>
+                <p>
+                    <span>Số tiền nhận được: </span>
+                    500000
+                </p>
+            </div>
+            <button data-method="#2">đồng ý</button>
+        </div>
+        <div class="the-mission" id="3">
+            <i class='bx bx-x close' data-method="#3"></i>
+            <h2>Thông tin nhiệm vụ</h2>
+            <div class="content-the-mission">
+                <p>
+                    <span>Mã nhiệm vụ: </span>
+                    2345
+                </p>
+                <p>
+                    <span>Tên nhiệm vụ: </span>
+                    Hate
+                </p>
+                <p>
+                    <span>Thời gian hoàn thành: </span>
+                    30-8-2004
+                </p>
+                <p>
+                    <span>Trạng thái: </span>
+                    Hoàn thành
+                </p>
+                <p>
+                    <span>Số tiền nhận được: </span>
+                    25000
+                </p>
+            </div>
+            <button data-method="#3">đồng ý</button>
+        </div>
+        <div class="the-mission" id="4">
+            <i class='bx bx-x close' data-method="#4"></i>
+            <h2>Thông tin nhiệm vụ</h2>
+            <div class="content-the-mission">
+                <p>
+                    <span>Mã nhiệm vụ: </span>
+                    7942
+                </p>
+                <p>
+                    <span>Tên nhiệm vụ: </span>
+                    Miss
+                </p>
+                <p>
+                    <span>Thời gian hoàn thành: </span>
+                    20-4-1909
+                </p>
+                <p>
+                    <span>Trạng thái: </span>
+                    Hoàn thành
+                </p>
+                <p>
+                    <span>Số tiền nhận được: </span>
+                    30000
+                </p>
+            </div>
+            <button data-method="#4">đồng ý</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content-top">
+            <h2>số dư của tôi</h2>
+            <h1>1055000</h1>
+        </div>
+        <div class="content-bottom">
+            <h3>rút tiền mặt</h3>
+            <div class="take-money">
+                <span>đ</span>
+                <input type="text" name="" id="">
+                <button>tất cả</button>
+            </div>
+            <div class="mission">
+                <div class="content-mission" data-method="#1">
+                    <p>
+                        <i class='bx bxs-calendar'></i>
+                        Nhiệm vụ 1
+                    </p>
+                    <p>+500000 VND</p>
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+                <div class="content-mission" data-method="#2">
+                    <p>
+                        <i class='bx bxs-calendar'></i>
+                        Nhiệm vụ 2
+                    </p>
+                    <p>+500000 VND</p>
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+                <div class="content-mission" data-method="#3">
+                    <p>
+                        <i class='bx bxs-calendar'></i>
+                        Nhiệm vụ 3
+                    </p>
+                    <p>+25000 VND</p>
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+                <div class="content-mission" data-method="#4">
+                    <p>
+                        <i class='bx bxs-calendar'></i>
+                        Nhiệm vụ 4
+                    </p>
+                    <p>+30000 VND</p>
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+            </div>
+            <div class="submit">
+                <button>Rút tiền</button>
+            </div>
+            <p class="error"></p>
+        </div>
+    </div>
+</body>
+</html>
